@@ -1,0 +1,49 @@
+<mat-card>
+<div *ngIf=" direitoCards$ | async as direitoCard;">
+  <mat-toolbar color="accent">
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button> -->
+    <span>10 livros mais importantes do Direito</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+<table mat-table [dataSource]="direitoCard" class="mat-elevation-z8">
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="autor">
+    <th mat-header-cell *matHeaderCellDef>Autor</th>
+    <td mat-cell *matCellDef="let direito "> {{direito.autor}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="titulo">
+    <th mat-header-cell *matHeaderCellDef>Nome </th>
+    <td mat-cell *matCellDef="let direito"> {{direito.titulo}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="numeracao">
+    <th mat-header-cell *matHeaderCellDef> </th>
+    <td mat-cell *matCellDef="let direito"> {{direito.numeracao}} </td>
+  </ng-container>
+
+  <!-- Symbol Column
+  <ng-container matColumnDef="symbol">
+    <th mat-header-cell *matHeaderCellDef> Symbol </th>
+    <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+  </ng-container> -->
+
+  <tr mat-header-row *matHeaderRowDef="visaoColunas"></tr>
+  <tr mat-row *matRowDef="let row; columns: visaoColunas;"></tr>
+</table>
+</div>
+</mat-card>
+
+
+

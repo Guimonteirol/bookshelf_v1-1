@@ -1,3 +1,5 @@
+import { DireitoComponent } from './direito/direito.component';
+import { SugestaoComponent } from './sugestao/sugestao.component';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
 import { FeedComponent } from './feed/feed.component';
 import { NgModule } from '@angular/core';
@@ -21,6 +23,16 @@ const routes: Routes = [
     path: 'cdd',
     loadChildren: () => import('./cdd/cdd.module').then(c => c.CddModule),
     ...canActivate(enviarSemLogin)
+  },
+  {
+    path: 'sugestao', component: SugestaoComponent,
+    ...canActivate(enviarSemLogin)
+
+  },
+  {
+    path: 'direito', component: DireitoComponent,
+    ...canActivate(enviarSemLogin)
+
   }
 ];
 
