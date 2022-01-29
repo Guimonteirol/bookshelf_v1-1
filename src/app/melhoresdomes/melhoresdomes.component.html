@@ -12,10 +12,10 @@
           <mat-nav-list>
             <mat-list-item *ngFor="let obras of card.obras">
               <div class="mudar">
+                <button mat-icon-button>
+                  <mat-icon>book</mat-icon>
+                </button>
               <p><span>{{obras.titulo}}</span></p>
-              <button mat-icon-button>
-                <mat-icon>book</mat-icon>
-              </button>
             </div>
             </mat-list-item>
           </mat-nav-list>
