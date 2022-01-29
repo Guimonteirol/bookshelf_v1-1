@@ -25,10 +25,15 @@ const routes: Routes = [
     loadChildren: () => import('./cdd/cdd.module').then(c => c.CddModule),
     ...canActivate(enviarSemLogin)
   },
-  { path:'melhores', component: MelhoresdomesComponent },
-  {path:'sugestao', component: SugestaoComponent},
-  { path:'direito', component: DireitoComponent}
-
+  { path:'melhores', component: MelhoresdomesComponent,
+  ...canActivate(enviarSemLogin)
+  },
+  {path:'sugestao', component: SugestaoComponent,
+  ...canActivate(enviarSemLogin)
+  },
+  { path:'direito', component: DireitoComponent,
+  ...canActivate(enviarSemLogin)
+  }
 
 ];
 
