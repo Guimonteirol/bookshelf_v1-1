@@ -1,0 +1,52 @@
+[
+  {
+    "numeracao": "1",
+    "titulo": "A firma",
+    "autor": "John Grisham"
+  },
+  {
+    "numeracao": "2",
+    "titulo": "Acima de qualquer suspeita",
+    "autor": "Scott Turow"
+  },
+  {
+    "numeracao": "3",
+    "titulo": "Crime e Castigo",
+    "autor": "Fiódor Dostoiévski"
+  },
+  {
+    "numeracao": "4",
+    "titulo": "O caso dos exploradores de caverna",
+    "autor": "Lon Fuller"
+  },
+  {
+    "numeracao": "5",
+    "titulo": "O Primeiro Ano – Como se faz um Advogado ",
+    "autor": "Scott Turow"
+  },
+  {
+    "numeracao": "6",
+    "titulo": "O Processo",
+    "autor": "Franz Kafka"
+  },
+  {
+    "numeracao": "7",
+    "titulo": "O sol é para todos",
+    "autor": "Harper Lee"
+  },
+  {
+    "numeracao": "8",
+    "titulo": "Um pilar de ferro",
+    "autor": "Taylor Caldwell"
+  },
+  {
+    "numeracao": "9",
+    "titulo": "Teoria da Norma Jurídica",
+    "autor": "Norberto Bobbio"
+  },
+  {
+    "numeracao": "10",
+    "titulo": "Teoria do Ordenamento Jurídico",
+    "autor": "Norberto Bobbio"
+  }
+]

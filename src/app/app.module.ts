@@ -21,6 +21,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HotToastModule } from '@ngneat/hot-toast';
+import {MatTableModule} from '@angular/material/table';
+
 
 import { environment } from '../environments/environment';
 import { AppMaterialModule } from './app-compartilhado/app-material/app-material.module';
@@ -30,6 +32,8 @@ import { AppComponent } from './app.component';
 import { FeedComponent } from './feed/feed.component';
 import { NavegacaoComponent } from './navegacao/navegacao.component';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
+import { SugestaoComponent } from './sugestao/sugestao.component';
+import { DireitoComponent } from './direito/direito.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,9 @@ import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
     NavegacaoComponent,
     FeedComponent,
     AppLoginComponent,
-    AppCadastroComponent
+    AppCadastroComponent,
+    SugestaoComponent,
+    DireitoComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +57,7 @@ import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatTableModule,
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
