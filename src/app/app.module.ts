@@ -21,6 +21,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HotToastModule } from '@ngneat/hot-toast';
+import {MatTableModule} from '@angular/material/table';
+
 
 import { environment } from '../environments/environment';
 import { AppMaterialModule } from './app-compartilhado/app-material/app-material.module';
@@ -31,6 +33,8 @@ import { FeedComponent } from './feed/feed.component';
 import { NavegacaoComponent } from './navegacao/navegacao.component';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
 import { MelhoresdomesComponent } from './melhoresdomes/melhoresdomes.component';
+import { SugestaoComponent } from './sugestao/sugestao.component';
+import { DireitoComponent } from './direito/direito.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +44,8 @@ import { MelhoresdomesComponent } from './melhoresdomes/melhoresdomes.component'
     AppLoginComponent,
     AppCadastroComponent,
     MelhoresdomesComponent,
+    SugestaoComponent,
+    DireitoComponent
 
   ],
   imports: [
@@ -54,6 +60,7 @@ import { MelhoresdomesComponent } from './melhoresdomes/melhoresdomes.component'
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatTableModule,
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
