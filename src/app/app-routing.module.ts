@@ -1,3 +1,5 @@
+import { DireitoComponent } from './direito/direito.component';
+import { SugestaoComponent } from './sugestao/sugestao.component';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
 import { FeedComponent } from './feed/feed.component';
 import { NgModule } from '@angular/core';
@@ -24,6 +26,8 @@ const routes: Routes = [
     ...canActivate(enviarSemLogin)
   },
   { path:'melhores', component: MelhoresdomesComponent },
+  {path:'sugestao', component: SugestaoComponent},
+  { path:'direito', component: DireitoComponent}
 
 
 ];
