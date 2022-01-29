@@ -12,7 +12,8 @@ import { Observable, catchError, of } from 'rxjs';
   styleUrls: ['./feed.component.scss']
 })
 export class FeedComponent {
-  cards$: Observable<Dashboard[]>;
+   cards$: Observable<Dashboard[]>;
+
   usuario$= this.autenticacaoFirebaseService.usuarioLogado$;
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {

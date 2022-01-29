@@ -3,6 +3,7 @@ import { FeedComponent } from './feed/feed.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { canActivate, redirectUnauthorizedTo, redirectLoggedInTo } from '@angular/fire/auth-guard';
+import { MelhoresdomesComponent } from './melhoresdomes/melhoresdomes.component';
 
 const enviarSemLogin = () => redirectUnauthorizedTo(['/app-app-cadastro']);
 
@@ -21,7 +22,10 @@ const routes: Routes = [
     path: 'cdd',
     loadChildren: () => import('./cdd/cdd.module').then(c => c.CddModule),
     ...canActivate(enviarSemLogin)
-  }
+  },
+  { path:'melhores', component: MelhoresdomesComponent },
+
+
 ];
 
 @NgModule({
