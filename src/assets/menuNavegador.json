@@ -4,7 +4,8 @@
   {"linkMenu": "/clube", "labelMenu":"Pagina Usuário", "hab": false},
   {"linkMenu": "/leitura", "labelMenu":"Clubes de Leitura", "hab": false},
   {"linkMenu": "/estante", "labelMenu":"Estante Particular", "hab": false},
-  {"linkMenu": "/melhores", "labelMenu": "Melhores","hab": true},
+  {"linkMenu": "/melhores", "labelMenu": "Especiais do Mês","hab": true},
   {"linkMenu": "/direito", "labelMenu": "Livros de Direito", "hab":true},
-  {"linkMenu": "/sugestao", "labelMenu": "Sugestõs de Livros", "hab":true}
+  {"linkMenu": "/sugestao", "labelMenu": "Sugestõs de Livros", "hab":true},
+  {"linkMenu": "/psicologia", "labelMenu": "Livros de Psicologia", "hab":true}
 ]
