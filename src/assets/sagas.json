@@ -1,0 +1,160 @@
+
+[
+  {
+    "id":1,
+    "title": "ASSASSIN'S CREED",
+    "article": "A série de livros “Assassin’s Creed” é baseada nos jogos de mesmo nome da Ubisoft, e foi escrita por Oliver Bowden. O enredo foca no desenvolvimento do protagonista Ezio Auditore, um assassino do segundo jogo de Assassin's Creed II.",
+    "lista":[
+      {"livro":"Renascença", "anodaEdicao":"(2011)"},
+      {"livro":"Irmandade", "anodaEdicao":"(2012)"},
+      {"livro":"A Cruzada Secreta", "anodaEdicao":"(2012)"},
+      {"livro":"Revelações", "anodaEdicao":"(2013"},
+      {"livro":"Renegado", "anodaEdicao":"(2012"},
+      {"livro":"Bandeira Negra", "anodaEdicao":"(2013"},
+      {"livro":"Unity", "anodaEdicao":"(2014"},
+      {"livro":"Submundo", "anodaEdicao":"(2015"}
+    ],
+    "cols": 2,
+    "rows": 1
+  },
+  {
+    "id":2,
+    "title": "THE WITCHER: A SAGA DO BRUXO GERALT DE RÍVIA",
+    "article": "A saga “The Witcher: A Saga do Bruxo Geralt de Rívia” trata-se de uma coleção de livros de fantasia escrita pelo polonês Andrzej Sapkowski. A história segue a jornada do mítico bruxo Geralt de Rívia, um dos últimos bruxos restantes na Terra. Neste universo, os bruxos são caçadores de monstros em troca de dinheiro, e geralmente são solitários e corajosos. O sucesso da saga gerou uma série na Netflix e jogos de videogame que expandiram a marca mundialmente.",
+    "lista":[
+      {"livro":"O Último Desejo", "anodaEdicao":"(2011"},
+      {"livro":"A Espada do Destino", "anodaEdicao":"(2012)"},
+      {"livro":"O Sangue dos Elfos", "anodaEdicao":"(2013"},
+      {"livro":"Tempo do Desprezo", "anodaEdicao":"(2014)"},
+      {"livro":"Batismo de Fogo", "anodaEdicao":"2015"},
+      {"livro":"A Torre da Andorinha", "anodaEdicao":"(2016)"},
+      {"livro":"A Senhora do Lago( Volumes 1 & 2)", "anodaEdicao":"(2017)"},
+      {"livro":"Tempo de Tempestade", "anodaEdicao":"2019"}
+    ],
+    "cols": 2,
+    "rows": 1
+  },
+  {
+    "id":3,
+    "title": "FEIOS",
+    "article": "A trilogia “Feios” foi escrita pelo norte-americano Scott Westerfeld, e apesar de ter sido pensada para três livros, a coleção possui um título a mais: “Extras”. Trata-se de uma série YA (young adult) de fantasia e ficção científica, com a protagonista a jovem Tally Youngblood. Neste universo, todos os humanos devem passar por cirurgias plásticas quando completam 16 anos. Tally, no entanto, acaba descobrindo as razões por trás desta imposição do governo, e se junta a uma gangue rebelde. A coleção é composta pelos títulos: “Feios” (2005), “Perfeitos” (2005), “Especiais” (2006) e “Extras” (2007).",
+    "lista":[
+      {"livro":"Feios", "anodaEdicao":"(2005)"},
+      {"livro":"Perfeitos", "anodaEdicao":"(2005)"},
+      {"livro":"Especiais", "anodaEdicao":"(2006)"},
+      {"livro":"Extras", "anodaEdicao":"(2007)"}
+    ],
+    "cols": 2,
+    "rows": 1
+  },
+  {
+    "id":4,
+    "title": "TRILOGIA 1Q84",
+    "article": "A trilogia “1Q84” é uma das obras primas do escritor japonês Haruki Murakami, e foi publicado em três volumes, entre 2009 e 2010. A história se passa em Tóquio de 1984, e envolve os personagens Aomame, uma assassina, e Tengo, um professor de matemática. Cada título tem seu propósito – o “livro 1” apresenta os personagens principais; o “livro 2” mostra a convergência da história entre os personagens; e o “livro 3” aborda a o encontro entre Aomame e Tengo, além do surgimento de uma nova personagem central: Ushikawa.",
+    "lista":[
+      {"livro":"Livro 1", "anodaEdicao":"(2012)"},
+      {"livro":"Livro 2", "anodaEdicao":"(2013)"},
+      {"livro":"Livro 3", "anodaEdicao":"(2013)"}
+    ],
+    "cols": 2,
+    "rows": 1
+  },
+  {
+    "id":5,
+    "title": "TRILOGIA MILLENNIUM",
+    "article": "A trilogia “Millennium” já é reconhecida no mundo inteiro, e foi escrita pelo jornalista sueco Stieg Larsson. A coleção reúne os títulos “Os Homens que Não Amavam as Mulheres” (2005); “A Menina que Brincava com Fogo” (2006); e “A Rainha do Castelo de Ar” (2007). Após a morte do escritor original, o sueco David Lagercrantz assumiu a autoria de um quarto livro da saga Millennium: “A Garota na Teia de Aranha” (2015). A série fala sobre violência contra as mulheres, baseada na história do próprio autor, que testemunhou um estupro coletivo de uma garota chamada Lisbeth, o mesmo nome da protagonista dos livros. ",
+    "lista":[
+      {"livro":"Os Homens que Não Amavam as Mulheres", "anodaEdicao":"(2005)"},
+      {"livro":"A Menina que Brincava com Fogo", "anodaEdicao":"(2006)"},
+      {"livro":"A Rainha do Castelo de Ar", "anodaEdicao":"(2007)"},
+      {"livro":"A Garota na Teia de Aranha", "anodaEdicao":"(2015)"},
+      {"livro":"O Homem que buscava a sua sombra", "anodaEdicao":"(2017)"}
+    ],
+    "cols": 2,
+    "rows": 1
+  },
+  {
+    "id":6,
+    "title": "DESVENTURAS EM SÉRIE",
+    "article": "“Desventuras em Série” é outra saga muito amada pelos fãs de literatura de mistério. Escrita por Lemony Snicket, a série é composta por 13 livros que contam a história dos órfãos Baudelaire sob a tutela do Conde Olaf, um homem terrível que odeia as crianças. Os pais das crianças morreram num incêndio, e a cada livro, Conde Olaf surge com uma nova tentativa de roubar a fortuna dos herdeiros. A saga é tão famosa que já ganhou filmes e série na Netflix ",
+    "lista":[
+        {"livro":"Mau Começo", "anodaEdicao":"(1999)"},
+        {"livro":"A Sala dos Répteis", "anodaEdicao":"(1999)"},
+        {"livro":"O Lago das Sanguessugas", "anodaEdicao":"(2000)"},
+        {"livro":"Serraria Baixo-Astral ", "anodaEdicao":"(2000)"},
+        {"livro":"Inferno no Colégio Interno", "anodaEdicao":"(2000)"},
+        {"livro":"O Elevador Ersatz", "anodaEdicao":"(2001)"},
+        {"livro":"A Cidade Sinistra dos Corvos", "anodaEdicao":"(2001)"},
+        {"livro":"O Hospital Hostil", "anodaEdicao":" (2001)"},
+        {"livro":"O Espetáculo Carnívoro", "anodaEdicao":"(2002)"},
+        {"livro":"O Escorregador de Gelo", "anodaEdicao":"(2003)"},
+        {"livro":"A Gruta Gorgônea", "anodaEdicao":"(2004)"},
+        {"livro":"O Penúltimo Perigo", "anodaEdicao":"(2005)"},
+        {"livro":"O Fim", "anodaEdicao":"(2006)"}
+    ],
+    "cols": 2,
+    "rows": 1
+  },
+  {
+    "id":7,
+    "title": "AS CRÔNICAS DE NÁRNIA",
+    "article": "“As Crônicas de Nárnia” é outro sucesso mundial, com adaptação ao cinema de igual sucesso. A saga foi escrita por C.S. Lewis, autor irlandês que publicou os sete livros da série entre 1950 e 1956. A história conta a trajetória das crianças que descobrem um mundo mágico escondido em um armário. O reino de Nárnia possui magia, animais falantes, temas cristãos e elementos da mitologia grega e nórdica, que criam um universo incrível para o leitor explorar. A saga possui duas formas de leitura: pela ordem de publicação ou cronológica. ",
+    "lista":[
+      {"livro":"O Leão, a Feiticeira e o Guarda-Roupa", "anodaEdicao":"(1950)"},
+      {"livro":"Príncipe Caspian ", "anodaEdicao":"(1951)"},
+      {"livro":"A Viagem do Peregrino da Alvorada ou A Viagem do Caminheiro da Alvorada", "anodaEdicao":"(1952)"},
+      {"livro":"A Cadeira de Prata, ou O Trono de Prata", "anodaEdicao":"(1953)"},
+      {"livro":"O Cavalo e seu Menino, ou O Cavalo e seu Rapaz ", "anodaEdicao":"(1954)"},
+      {"livro":"O Sobrinho do Mago, ou O Sobrinho do Mágico", "anodaEdicao":"(1955)"},
+      {"livro":"A Última Batalha ", "anodaEdicao":"(1956)"}
+    ],
+    "cols": 2,
+    "rows": 1
+  },
+  {
+    "id":8,
+    "title": "HARRY POTTER",
+    "article": "Um dos bruxos mais famosos do mundo, Harry Potter marcou gerações de crianças que se apaixonaram pelo mundo bruxo, os três amigos e Hogwarts. A saga foi escrita por J.K. Rowling, autora britânica, e possui sete livros: “A Pedra Filosofal”; “A Câmara Secreta”; “O Prisioneiro de Azkaban”; “O Cálice de Fogo”; “A Ordem da Fênix”; “O Enigma do Príncipe”; e “As Relíquias da Morte”. Para quem não conhece a história, Harry Potter é um bruxo famoso que sobreviveu ao ataque mortal do terrível Lorde Voldemort, quando era um bebê. Os livros seguem a história do protagonista em sua formação como bruxo pela escola de magia Hogwarts. ",
+    "lista":[
+      {"livro":"Harry Potter e a Pedra Filosofal,", "anodaEdicao":"(1997)"},
+      {"livro":"Harry Potter e a Câmara Secreta", "anodaEdicao":"(2000)"},
+      {"livro":"Harry Potter e o Prisioneiro de Azkaban", "anodaEdicao":"(1999)"},
+      {"livro":"Harry Potter e o Cálice de Fogo", "anodaEdicao":"(2001)"},
+      {"livro":"Harry Potter e a Ordem da Fênix", "anodaEdicao":"(2003)"},
+      {"livro":"Harry Potter e o Enigma do Príncipe", "anodaEdicao":"(2005)"},
+      {"livro":"Harry Potter e as Relíquias da Morte", "anodaEdicao":"(2007)"}
+    ],
+    "cols": 2,
+    "rows": 1
+  },
+  {
+    "id":9,
+    "title": "O GUIA DO MOCHILEIRO DAS GALÁXIAS",
+    "article": "“O Guia do Mochileiro das Galáxias” é uma saga famosa entre os apreciadores de ficção científica que virou um marco da cultura geek. A série foi escrita por Douglas Adams e é dividida em seis livros, que foram publicados entre 1979 e 2009: “O Guia do Mochileiro das Galáxias”; “O Restaurante no Fim do Universo”; “A Vida, o Universo e Tudo Mais”; “Até mais, e Obrigado pelos Peixes!”; “Praticamente Inofensiva”; e “And Another Thing...” – esse último escrito por Eoin Colfer após a morte de Adams, em 2001. O impacto da saga foi tanto que a cultura geek instaurou o Dia da Toalha, em homenagem à série. ",
+    "lista":[
+      {"livro":"O Guia do mochileiro das Galáxias", "anodaEdicao":"(1979)"},
+      {"livro":"O restaurante do fim do universo", "anodaEdicao":"(1980)"},
+      {"livro":"A Vida, O Universo e Tudo Mais", "anodaEdicao":"(1982)"},
+      {"livro":"Até mais, e obrigado pelos peixes", "anodaEdicao":"(1984)"},
+      {"livro":"Praticamente Inofensiva", "anodaEdicao":"(1992)"},
+      {"livro":"E tem outra coisa", "anodaEdicao":"(2009)"},
+      {"livro":"O salmão da dúvida", "anodaEdicao":"(2002)"}
+    ],
+    "cols": 2,
+    "rows": 1
+  },
+  {
+    "id":10,
+    "title": "AS CRÔNICAS DO GELO E FOGO",
+    "article": "Uma das sagas de maior sucesso atual é com certeza “As Crônicas de Gelo e Fogo”, escrita pelo autor George R. R. Martin. Ele começou a saga em 1996 e segue escrevendo a obra até hoje. Há cinco títulos publicados e dois a publicar. São eles: “A Guerra dos Tronos” (1996); “A Fúria dos Reis” (1998); “A Tormenta de Espadas” (2000); “O Festim dos Corvos” (2005); “A Dança dos Dragões” (2011); “The Winds of Winter” (a publicar); e “A Dream of Spring” (a publicar). A saga fantástica foi adaptada para a televisão pela HBO com a série “Game Of Thrones”, que também fez enorme sucesso mundial. ",
+    "lista":[
+      {"livro":"A Guerra dos Tronos", "anodaEdicao":"(1996)"},
+      {"livro":"A Fúria dos Reis", "anodaEdicao":"(1988)"},
+      {"livro":"A Tormenta de Espadas", "anodaEdicao":"(2000)"},
+      {"livro":"O Festim dos Corvos", "anodaEdicao":"(2005)"},
+      {"livro":"A Dança dos Dragões", "anodaEdicao":"(2011)"}
+    ],
+    "cols": 2,
+    "rows": 1
+  }
+]

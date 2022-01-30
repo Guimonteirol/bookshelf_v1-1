@@ -30,6 +30,8 @@ import { AppComponent } from './app.component';
 import { FeedComponent } from './feed/feed.component';
 import { NavegacaoComponent } from './navegacao/navegacao.component';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
+import { SagasComponent } from './sagas/sagas.component';
+import { SagasDialogComponent } from './sagas/sagasDialog/sagas-dialog/sagas-dialog.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
     NavegacaoComponent,
     FeedComponent,
     AppLoginComponent,
-    AppCadastroComponent
+    AppCadastroComponent,
+    SagasComponent,
+    SagasDialogComponent
   ],
   imports: [
     BrowserModule,
