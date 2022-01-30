@@ -6,6 +6,7 @@
   {"linkMenu": "/estante", "labelMenu":"Estante Particular", "hab": false},
   {"linkMenu": "/melhores", "labelMenu": "Especiais do Mês","hab": true},
   {"linkMenu": "/direito", "labelMenu": "Livros de Direito", "hab":true},
-  {"linkMenu": "/sugestao", "labelMenu": "Sugestõs de Livros", "hab":true},
-  {"linkMenu": "/psicologia", "labelMenu": "Livros de Psicologia", "hab":true}
+  {"linkMenu": "/sugestao", "labelMenu": "Sugestões de Livros", "hab":true},
+  {"linkMenu": "/psicologia", "labelMenu": "Livros de Psicologia", "hab":true},
+  {"linkMenu": "/artes", "labelMenu": "Livros de Artes", "hab": true}
 ]
