@@ -36,6 +36,7 @@ import { MelhoresdomesComponent } from './melhoresdomes/melhoresdomes.component'
 import { SugestaoComponent } from './sugestao/sugestao.component';
 import { DireitoComponent } from './direito/direito.component';
 import { PsicologiaComponent } from './psicologia/psicologia.component';
+import { ArtesComponent } from './artes/artes.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { PsicologiaComponent } from './psicologia/psicologia.component';
     MelhoresdomesComponent,
     SugestaoComponent,
     DireitoComponent,
-    PsicologiaComponent
+    PsicologiaComponent,
+    ArtesComponent
 
   ],
   imports: [
