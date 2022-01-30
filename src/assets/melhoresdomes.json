@@ -1,0 +1,38 @@
+[
+  {"title": "Machado de Assis",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Machado_de_Assis_1904.jpg/500px-Machado_de_Assis_1904.jpg",
+     "obras":[
+       {"titulo": "Ressurreição (1872)"},
+       {"titulo":"A Mão e a Luva (1874)"},
+       {"titulo":"Helena (1876)"},
+       {"titulo":"Iaiá Garcia (1878)"}
+     ],
+     "cols": 2,
+     "rows": 1},
+  {"title": "Euclides da Cunha",
+    "img":"https://upload.wikimedia.org/wikipedia/commons/9/93/Euclides_da_Cunha.jpg" ,
+      "obras":[
+    {"titulo": " O Democrata"},
+    {"titulo":"A Pátria e a Dinastia"},
+    {"titulo":"Canudos: diário de uma expedição."},
+    {"titulo":"Os Sertões: campanha de Canudos."}
+  ],
+   "cols": 2, "rows": 1},
+  {"title": "Cecília Meireles",
+    "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Cecília_Meireles%2C_sem_data.tif/lossy-page1-440px-Cecília_Meireles%2C_sem_data.tif.jpg"  ,
+    "obras":[
+    {"titulo": "Baladas para El-Rei, 1925"},
+    {"titulo":"Antologia Poética, 1963"},
+    {"titulo":"Ou Isto ou Aquilo, 1964"},
+    {"titulo":"O Menino Atrasado, 1966"}
+  ], "cols": 2, "rows": 2},
+  {"title": "Clarice Lispector",
+    "img":"https://upload.wikimedia.org/wikipedia/commons/7/75/Clarice_Lispector_%28cropped%29.jpg",
+    "obras":[
+    {"titulo": "O Mistério do Coelho Pensante (1967)"},
+    {"titulo":"A Cidade Sitiada (1949)"},
+    {"titulo":"A Mulher que Matou os Peixes (1968)"},
+    {"titulo":"Outros Escritos (2005)"}
+  ],"cols": 2, "rows": 2}
+
+]

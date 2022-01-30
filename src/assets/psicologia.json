@@ -1,0 +1,12 @@
+[
+  { "title": "Rápido e Devagar: duas formas de pensar", "autor": "Daniel Kahneman ", "numero": 1  },
+  { "title": " Em Busca de Sentido", "autor": " Viktor E. Frankl", "numero": 2  },
+  { "title": " O Animal Social ", "autor": "Elliot Aronson ", "numero": 3 },
+  { "title": " Incógnito: As vidas secretas do cérebro ", "autor": "David Eagleman ", "numero": 4  },
+  { "title": "Inteligência emocional", "autor": "Daniel Goleman ", "numero": 5 },
+  { "title": "Seus Pontos Fracos", "autor": "Wayne Dyer ", "numero": 6 },
+  { "title": "Amar ou Depender?", "autor": " Walter Riso", "numero": 7  },
+  { "title": "Bipolar: Memórias de Extremos ", "autor": " Terri Cheney", "numero": 8  },
+  { "title": "O Homem que Confundiu a sua Mulher com um Chapéu", "autor": "Oliver Sacks ", "numero": 9 },
+  { "title": "O que nos faz Felizes", "autor": " Daniel Gilbert", "numero": 10 }
+]

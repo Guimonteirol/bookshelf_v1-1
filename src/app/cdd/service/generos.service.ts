@@ -8,7 +8,7 @@ import { delay, first, tap} from 'rxjs';
 })
 export class GenerosService {
 
-  private readonly urlAPI = '/assets/generos.json';
+  private readonly urlAPI = '/assets/generos.json'; //BREAK POINT
 
   constructor(private clienteDados: HttpClient) { }
 
