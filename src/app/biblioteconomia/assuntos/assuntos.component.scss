@@ -1,0 +1,21 @@
+.grid-container {
+  margin: 20px;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: fit-content;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: inherit;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  max-height: inherit;
+}
+
+.dashboard-card-content {
+  text-align: justify;
+}
+

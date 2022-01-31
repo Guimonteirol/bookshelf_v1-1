@@ -1,0 +1,30 @@
+[
+  {
+    "title": "O que é Biblioteconomia?",
+    "article": "Biblioteconomia é uma área interdisciplinar e multidisciplinar do conhecimento que estuda as práticas, perspectivas e as aplicações de métodos de representação, e gestão da informação e do conhecimento, em diferentes ambientes de informação, tais como bibliotecas, centros de documentação, e centros de pesquisa. Atualmente, a área está entrelaçada com diversas outras áreas, principalmente com a Ciência da Informação e a Documentação.",
+    "cols": 1,
+    "rows": 2,
+    "img": "https://cdn.pixabay.com/photo/2017/08/06/22/01/books-2596809_960_720.jpg"
+  },
+  {
+    "title": "Profissão",
+    "article": "O bibliotecário é um profissional que trata a informação e a torna acessível ao usuário final, independentemente do suporte informacional. Ele trabalha em centros de documentação, bibliotecas, pode gerir redes e sistemas de informação, além de gerir recursos informacionais trabalhando com tecnologia de ponta. É ele quem classifica, conserva, organiza, divulga e gerencia acervos de bibliotecas, centros de documentação, e os mais diversos tipos de unidades de informação. O bibliotecário trabalha como um administrador de dados, que também processa e dissemina a informação. Cabe-lhe analisar, sintetizar e organizar livros, revistas, filmes e vídeos que constituam de coleções. É de sua responsabilidade planejar, implementar e gerenciar sistemas de informação, além de preservar os suportes e mídias para que resistam ao tempo e ao uso. E também compreender o modo de busca do usuário.",
+    "cols": 1,
+    "rows": 1
+  },
+  {
+    "title": "O Curso de Biblioteconomia",
+    "article": "O curso de biblioteconomia dura no mínimo 3 anos. Durante a graduação, os alunos têm matérias de introdução à economia, contabilidade e até marketing. Se tiverem interesse, depois da facul podem fazer um mestrado e até um doutorado pra dar aulas em cursos técnicos de biblioteconomia e em universidades e faculdades.",
+    "cols": 1,
+    "rows": 1,
+    "img": "https://cdn.pixabay.com/photo/2016/03/26/22/21/books-1281581_960_720.jpg"
+  },
+  {
+    "title": "Resumo histórico",
+    "article": "A história da Biblioteconomia data desde o surgimento da Biblioteca de Alexandria, em 288 a.C., criada com a finalidade de reunir e classificar todos os conhecimentos registrados em forma documental. Outras bibliotecas também extremamente importantes para a história da profissão são as bibliotecas da Idade Média, inseridas nos conventos e nos mosteiros, também denominadas bibliotecas monásticas, onde o acesso era restrito apenas ao clero e a nobreza, que criam que ao ter toda a fonte de conhecimento, teriam também o poder. No Renascimento, surge um novo tipo de biblioteca, também conhecidas como particulares. Essas são consideradas as precursoras das bibliotecas modernas, cuja uma das características é a acessibilidade dos livros ao público. Mais tarde, Johannes Gutenberg cria a Imprensa, que permite, a partir do século XVI, a disseminação da informação e a laicização do conhecimento. Com isso, começam a surgir as bibliotecas nacionais no século seguinte, além de ser publicado o primeiro livro destinado a apoiar a organização das bibliotecas: Avis pour dresser une bibliothéque (1627), de Gabriel Naudé. A Revolução Francesa também é de grande destaque por permitir o surgimento de bibliotecas públicas, e também marcar a publicação da primeira enciclopédia.",
+    "article2": "A criação dos primeiros cursos da área de Biblioteconomia foram o da École Nationale des Chartes, na França, em 1821, e o da Columbia University, em 1887, nos Estados Unidos. O curso da Columbia University foi criado por Melvil Dewey, que se tornou um dos pensadores mais importantes da área. Em 1888, na Clerkenwell Public Library, James Duff Brown cria o único sistema de classificação da Inglaterra, o livre acesso às estantes. Já no Brasil, a Biblioteconomia se faz presente desde a criação das bibliotecas beneditinas, franciscanas e jesuítas, mas principalmente com a criação da Biblioteca Nacional, no estado de Rio de Janeiro. O Conselho Federal de Biblioteconomia (CFB), entretanto, só considera que a área passou a existir no país em 1911, com a criação do primeiro curso de Biblioteconomia do Brasil, também o primeiro da América Latina, e o terceiro no mundo. ",
+    "cols": 2,
+    "rows": 3,
+    "img": "https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_960_720.jpg"
+  }
+]

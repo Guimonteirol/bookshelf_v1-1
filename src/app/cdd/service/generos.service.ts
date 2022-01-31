@@ -7,8 +7,9 @@ import { delay, first, tap} from 'rxjs';
   providedIn: 'root'
 })
 export class GenerosService {
+add-component-tecnologia-and-module-biblioteconomia
+  private readonly urlAPI = '/assets/generos.json'; //breakpoint
 
-  private readonly urlAPI = '/assets/generos.json'; //BREAK POINT
 
   constructor(private clienteDados: HttpClient) { }
 

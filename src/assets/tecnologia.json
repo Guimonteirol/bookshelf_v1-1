@@ -1,0 +1,52 @@
+[
+  {
+    "position": 1,
+    "title": "Código Limpo",
+    "author": "Robert C. Martin"
+  },
+  {
+    "position": 2,
+    "title": "Gatilhos Mentais",
+    "author": "Gustavo Ferreira"
+  },
+  {
+    "position": 3,
+    "title": "Arquitetura limpa",
+    "author": "Robert C. Martin"
+  },
+  {
+    "position": 4,
+    "title": "Marketing 5.0: Tecnologia para a humanidade",
+    "author": "Philip Kotler"
+  },
+  {
+    "position": 5,
+    "title": "Liberdade digital",
+    "author": "Souza Hyeser"
+  },
+  {
+    "position": 6,
+    "title": "Desenvolvimento ágil limpo",
+    "author": "Robert C. Martin"
+  },
+  {
+    "position": 7,
+    "title": "O Padrão Bitcoin",
+    "author": "Saifedean Ammous"
+  },
+  {
+    "position": 8,
+    "title": "Data science para negócios",
+    "author": "Foster Provost"
+  },
+  {
+    "position": 9,
+    "title": "14 Hábitos de Desenvolvedores Altamente Produtivos",
+    "author": "Zeno Rocha"
+  },
+  {
+    "position": 10,
+    "title": "Scrum e Métodos Ágeis: Um Guia Prático",
+    "author": "Luiz Duarte"
+  }
+]
