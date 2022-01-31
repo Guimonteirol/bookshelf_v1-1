@@ -1,0 +1,19 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Tudo o que você precisa saber sobre Biblioteconomia</h1>
+  <mat-grid-list cols="2" rowHeight= "380px" >
+    <mat-grid-tile *ngFor="let card of biblioCards$ | async" [colspan]="card.cols" [rowspan]="card.rows">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            {{card.title}}
+          </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="card.img">
+        <mat-card-content class="dashboard-card-content">
+          <div>{{card.article}}</div>
+          <div>{{card.article2}}</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

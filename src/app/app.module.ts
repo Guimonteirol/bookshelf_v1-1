@@ -30,6 +30,7 @@ import { AppComponent } from './app.component';
 import { FeedComponent } from './feed/feed.component';
 import { NavegacaoComponent } from './navegacao/navegacao.component';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
+import { TecnologiaComponent } from './tecnologia/tecnologia.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
     NavegacaoComponent,
     FeedComponent,
     AppLoginComponent,
-    AppCadastroComponent
+    AppCadastroComponent,
+    TecnologiaComponent,
   ],
   imports: [
     BrowserModule,
