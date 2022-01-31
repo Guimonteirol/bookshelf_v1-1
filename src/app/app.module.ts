@@ -32,6 +32,8 @@ import { AppComponent } from './app.component';
 import { FeedComponent } from './feed/feed.component';
 import { NavegacaoComponent } from './navegacao/navegacao.component';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
+import { TecnologiaComponent } from './tecnologia/tecnologia.component';
+
 import { SagasComponent } from './sagas/sagas.component';
 import { SagasDialogComponent } from './sagas/sagasDialog/sagas-dialog/sagas-dialog.component';
 import { MelhoresdomesComponent } from './melhoresdomes/melhoresdomes.component';
@@ -47,6 +49,7 @@ import { ArtesComponent } from './artes/artes.component';
     FeedComponent,
     AppLoginComponent,
     AppCadastroComponent,
+    TecnologiaComponent,
     SagasComponent,
     SagasDialogComponent,
     MelhoresdomesComponent,

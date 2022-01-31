@@ -4,6 +4,8 @@
   {"linkMenu": "/clube", "labelMenu":"Pagina Usuário", "hab": false},
   {"linkMenu": "/leitura", "labelMenu":"Clubes de Leitura", "hab": false},
   {"linkMenu": "/estante", "labelMenu":"Estante Particular", "hab": false},
+  {"linkMenu": "/biblioteconomia", "labelMenu":"Sobre Biblioteconomia", "hab": true},
+  {"linkMenu": "/tecnologia", "labelMenu": "Livros de Tecnologia", "hab": true},
   {"linkMenu": "/sagas", "labelMenu":"AS 10 principais Sagas da Literatura", "hab": true},
 
   {"linkMenu": "/melhores", "labelMenu": "Especiais do Mês","hab": true},
