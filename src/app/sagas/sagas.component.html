@@ -5,11 +5,11 @@
     <mat-grid-tile *ngFor="let card of sagasCards$ | async" [colspan]="card.cols" [rowspan]="card.rows">
       <mat-card class="dashboard-card">
         <mat-card-header>
-          
+
           <mat-card-title>
             {{card.title}}
             <!--botão para mostrar as listas de livro da saga-->
-                <button mat-button class="more-button" (click)="openDialog()">
+                <button mat-button class="more-button" (click)="openDialog(card.title)">
                   Confira <a routerLink="#">aqui</a> a coleção desta Saga!
               </button>
 

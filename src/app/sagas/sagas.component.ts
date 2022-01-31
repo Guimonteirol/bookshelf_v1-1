@@ -15,12 +15,10 @@ import { SagasDialogComponent } from './sagasDialog/sagas-dialog/sagas-dialog.co
 })
 export class SagasComponent {
 
-  openDialog() {
+  openDialog(title:string) {
 
     this.dialog.open(SagasDialogComponent, {
-      data: {
-
-      },
+      data: title,
     });
   }
 

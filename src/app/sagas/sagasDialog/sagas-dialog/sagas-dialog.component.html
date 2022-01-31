@@ -1,9 +1,11 @@
 <div *ngFor="let list of sagasLista$ | async">
-<div mat-dialog-content *ngFor="let livros of list.lista">
-  <ul>
-    <li *ngIf="list.id">
-      {{ livros.livro }} - Ano da Edição: {{livros.anodaEdicao}}
-    </li>
-  </ul>
-</div>
+  <div *ngIf="list.title === title">
+    <div mat-dialog-content *ngFor="let livros of list.lista">
+      <ul>
+        <li *ngIf="list.title">
+          {{ livros.livro }} - Ano da Edição: {{livros.anodaEdicao}}
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
