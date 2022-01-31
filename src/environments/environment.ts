@@ -10,6 +10,7 @@ export const environment = {
   authDomain: 'bookshelfv1-b5771.firebaseapp.com',
   messagingSenderId: '345956588414',
   measurementId: 'G-FNBHP8M473',
+
   },
   production: false
 };

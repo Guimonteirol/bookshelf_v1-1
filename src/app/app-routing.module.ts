@@ -29,6 +29,7 @@ const routes: Routes = [
     loadChildren: () => import('./cdd/cdd.module').then(c => c.CddModule),
     ...canActivate(enviarSemLogin)
   },
+
   {
     path: 'biblioteconomia',
     loadChildren: () => import('./biblioteconomia/biblioteconomia.module').then(c => c.BiblioteconomiaModule),
