@@ -21,6 +21,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HotToastModule } from '@ngneat/hot-toast';
+import {MatTableModule} from '@angular/material/table';
+
 
 import { environment } from '../environments/environment';
 import { AppMaterialModule } from './app-compartilhado/app-material/app-material.module';
@@ -31,6 +33,13 @@ import { FeedComponent } from './feed/feed.component';
 import { NavegacaoComponent } from './navegacao/navegacao.component';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
 import { TecnologiaComponent } from './tecnologia/tecnologia.component';
+import { SagasComponent } from './sagas/sagas.component';
+import { SagasDialogComponent } from './sagas/sagasDialog/sagas-dialog/sagas-dialog.component';
+import { MelhoresdomesComponent } from './melhoresdomes/melhoresdomes.component';
+import { SugestaoComponent } from './sugestao/sugestao.component';
+import { DireitoComponent } from './direito/direito.component';
+import { PsicologiaComponent } from './psicologia/psicologia.component';
+import { ArtesComponent } from './artes/artes.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +49,14 @@ import { TecnologiaComponent } from './tecnologia/tecnologia.component';
     AppLoginComponent,
     AppCadastroComponent,
     TecnologiaComponent,
+    SagasComponent,
+    SagasDialogComponent,
+    MelhoresdomesComponent,
+    SugestaoComponent,
+    DireitoComponent,
+    PsicologiaComponent,
+    ArtesComponent
+
   ],
   imports: [
     BrowserModule,
@@ -53,6 +70,7 @@ import { TecnologiaComponent } from './tecnologia/tecnologia.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatTableModule,
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
