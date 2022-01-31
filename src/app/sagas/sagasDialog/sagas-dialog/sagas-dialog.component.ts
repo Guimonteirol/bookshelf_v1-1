@@ -1,6 +1,6 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { catchError, Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Sagas } from 'src/app/modelosInterface/sagas';
@@ -28,6 +28,7 @@ export class SagasDialogComponent implements OnInit {
     public dialog:MatDialog,
     private breakpointObserver: BreakpointObserver,
     private sagasInfo: SagasService,
+    @Inject (MAT_DIALOG_DATA) public title:string
   ) {
     this.sagasLista$ = sagasInfo.listagemSagas()
     .pipe(
