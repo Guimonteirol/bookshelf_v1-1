@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { AbstractControl, FormBuilder, FormControl, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormControl, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { HotToastService } from '@ngneat/hot-toast';
+import { catchError, of } from 'rxjs';
 
 import { AutenticacaoFirebaseService } from './../servicosInterface/autenticacao-firebase.service';
 
@@ -25,54 +26,76 @@ export function passwordMatchValidator(): ValidatorFn {
   styleUrls: ['./app-cadastro.component.scss']
 })
 export class AppCadastroComponent implements OnInit {
+  stepOne!: FormGroup;
+  steptwo!: FormGroup;
+  stepthree!: FormGroup;
+  stepfour!: FormGroup;
 
-  formularioCadastro = this.loginBuilder.group({
-    nome: new FormControl('', Validators.required),
-    email: new FormControl('', [Validators.required, Validators.email]),
-    senha: new FormControl('', Validators.required),
-    confirmaSenha: new FormControl('', Validators.required),
-  }, { validators: passwordMatchValidator() });
+  //desconstruir formularioCadastro
+  nomeuser!:string;
+  emailuser!:string;
+  senhauser!:string;
+  confirmarSenhauser!:string;
 
   constructor(
     private loginBuilder: FormBuilder,
     private autenticacaoFirebaseService: AutenticacaoFirebaseService,
     private toast: HotToastService,
-    private rotas: Router
-  ) { }
+    private rotas: Router,
+    private _formBuilder: FormBuilder
 
-  get nome() {
-    return this.formularioCadastro.get('nome')
-  }
+  ) {
+    /*this.stepOne = this.loginBuilder.group({
+      nome: ['', Validators.compose([Validators.required])]
+    })
+    this.stepdois = this.loginBuilder.group({
+      email: ['', Validators.compose([Validators.required])]
+    })
+    this.steptres = this.loginBuilder.group({
+      senha: ['', Validators.compose([Validators.required])]
+    })
+    this.stepquatro = this.loginBuilder.group({
+      confirmaSenha: ['', Validators.compose([Validators.required])]
+    })*/
+   }
 
-  get email() {
-    return this.formularioCadastro.get('email')
-  }
-
-  get senha() {
-    return this.formularioCadastro.get('senha')
-  }
-
-  get confirmaSenha() {
-    return this.formularioCadastro.get('confirmaSenha')
-  }
 
   enviaCadastro() {
-    if (!this.formularioCadastro.valid) {
-      return;
+    if (!this.nomeuser || !this.emailuser || !this.senhauser || !this.confirmarSenhauser) {
+     this.toast.error('Informações incompletas!')
     }
-    const { nome, email, senha } = this.formularioCadastro.value;
+    else if(this.senhauser !== this.confirmarSenhauser){
+      this.toast.error('As senhas estão diferentes!');
+    }
+
+   // const { nome, email, senha } = this.formularioCadastro.value;
     this.autenticacaoFirebaseService
-      .cadastrarUsuario(nome, email, senha)
-      .pipe(
+      .cadastrarUsuario(this.nomeuser, this.emailuser, this.senhauser).pipe(
         this.toast.observe({
-          success: 'Cadatro executado, bem vindo ao BookShelf',
+          success: 'Cadastro executado, bem vindo ao BookShelf',
           loading: 'Enviando informações...',
-          error: ({ message }) => `Houve um problema: #BS${message}`,
+          error: ({ message }) => this.autenticacaoFirebaseService.menssagensDeErro(message),
         })
       ).subscribe(() => {
-        this.rotas.navigate(['/'])
+        this.nomeuser = '';
+        this.emailuser = '';
+        this.senhauser = '';
+        this.confirmarSenhauser = '';
+       this.rotas.navigate(['/usuario'])
       });
   }
   ngOnInit(): void {
+     this.stepOne = this.loginBuilder.group({
+      nome: ['', Validators.compose([Validators.required])]
+    })
+    this.steptwo = this.loginBuilder.group({
+      email: ['', Validators.compose([Validators.required])]
+    })
+    this.stepthree = this.loginBuilder.group({
+      senha: ['', Validators.compose([Validators.required])]
+    })
+    this.stepfour = this.loginBuilder.group({
+      confirmaSenha: ['', Validators.compose([Validators.required])]
+    })
   }
 }

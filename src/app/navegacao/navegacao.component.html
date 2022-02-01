@@ -2,10 +2,26 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
     <img mat-card-image [src]="logoMenu" alt="Imagem do logo no menu">
+
+    <button mat-button [matMenuTriggerFor]="menu" >Conteúdos</button>
+    <mat-menu #menu="matMenu" >
     <mat-nav-list *ngFor="let itemMenu of itensMenu$ | async; index as i">
-      <a mat-list-item *ngIf="itemMenu.hab === true" [href]="itemMenu.linkMenu">{{itemMenu.labelMenu}}</a>
+      <div *ngIf="itemMenu.btn == 'conteudo'">
+     <a mat-list-item *ngIf="itemMenu.hab === true" [href]="itemMenu.linkMenu">{{itemMenu.labelMenu}}</a>
+    </div>
     </mat-nav-list>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="menu2" >Tabelas</button>
+    <mat-menu #menu2="matMenu" >
+    <mat-nav-list *ngFor="let itemMenu of itensMenu$ | async; index as i">
+      <div *ngIf="itemMenu.btn == 'tabela'">
+     <a mat-list-item *ngIf="itemMenu.hab === true" [href]="itemMenu.linkMenu">{{itemMenu.labelMenu}}</a>
+    </div>
+    </mat-nav-list>
+    </mat-menu>
   </mat-sidenav>
+
   <mat-sidenav-content>
     <mat-toolbar color="primary">
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
@@ -29,6 +45,11 @@
     </mat-toolbar>
     <mat-menu #usuarioMenu="matMenu">
       <button mat-menu-item (click)="sairUsuario()">LOGOUT</button>
+        <mat-nav-list *ngFor="let itemMenu of itensMenu$ | async; index as i">
+          <a mat-list-item *ngIf="itemMenu.user === true" [href]="itemMenu.linkMenu">
+            <p>{{itemMenu.labelMenu}}</p>
+          </a>
+        </mat-nav-list>
     </mat-menu>
     <router-outlet></router-outlet>
   </mat-sidenav-content>

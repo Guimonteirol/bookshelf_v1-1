@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+span{
+  font-family: 'Poppins', sans-serif;
+}
+
+mat-grid-tile {
+  background: rgb(139, 55, 235);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  width: 100%;
+}
+
+mat-card{
+ height: 100%;
+}
+
+.user_left{
+  width:60%;
+  background-color: rgb(92, 39, 177);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+}
+
+.user_right{
+  width: 40%;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+}
+
+

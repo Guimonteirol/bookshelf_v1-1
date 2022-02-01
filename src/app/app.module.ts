@@ -42,6 +42,7 @@ import { DireitoComponent } from './direito/direito.component';
 import { PsicologiaComponent } from './psicologia/psicologia.component';
 import { ArtesComponent } from './artes/artes.component';
 import { TeatroComponent } from './teatro/teatro.component';
+import { TelaUsuarioComponent } from './tela-usuario/tela-usuario.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { TeatroComponent } from './teatro/teatro.component';
     DireitoComponent,
     PsicologiaComponent,
     ArtesComponent,
-    TeatroComponent
+    TeatroComponent,
+    TelaUsuarioComponent
 
   ],
   imports: [

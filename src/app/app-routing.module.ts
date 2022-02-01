@@ -1,3 +1,4 @@
+import { TelaUsuarioComponent } from './tela-usuario/tela-usuario.component';
 import { ArtesComponent } from './artes/artes.component';
 import { PsicologiaComponent } from './psicologia/psicologia.component';
 import { DireitoComponent } from './direito/direito.component';
@@ -20,6 +21,10 @@ const routes: Routes = [
   },
   {
     path:'app-app-cadastro', component: AppCadastroComponent
+  },
+  {
+    path: 'usuario', component: TelaUsuarioComponent,
+    ...canActivate(enviarSemLogin)
   },
   {
     path: 'feed', component: FeedComponent,
