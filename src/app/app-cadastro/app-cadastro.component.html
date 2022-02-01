@@ -11,7 +11,7 @@
         <input matInput [(ngModel)] ="nomeuser" placeholder="Entre com seu nome" formControlName="nome"required>
       </mat-form-field>
       <div>
-        <button mat-button matStepperNext>Next</button>
+        <button mat-button matStepperNext>Próximo</button>
       </div>
  </form>
   </mat-step>
@@ -24,8 +24,8 @@
         <input matInput [(ngModel)]="emailuser" placeholder="Email de Login" formControlName="email">
       </mat-form-field>
       <div>
-        <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button>
+        <button mat-button matStepperPrevious>Voltar</button>
+        <button mat-button matStepperNext>Próximo</button>
       </div>
     </form>
   </mat-step>
@@ -38,8 +38,8 @@
         <input matInput [(ngModel)]="senhauser" placeholder="Entre com senha" formControlName="senha" type="password">
       </mat-form-field>
       <div>
-        <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button>
+        <button mat-button matStepperPrevious>Voltar</button>
+        <button mat-button matStepperNext>Próximo</button>
       </div>
     </form>
   </mat-step>
@@ -52,15 +52,15 @@
         <input matInput [(ngModel)]="confirmarSenhauser" placeholder="Confirme a senha anterior" formControlName="confirmaSenha" type="password">
       </mat-form-field>
       <div>
-        <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button>
+        <button mat-button matStepperPrevious>Voltar</button>
+        <button mat-button matStepperNext>Próximo</button>
       </div>
     </form>
   </mat-step>
 
   <mat-step>
-    <ng-template matStepLabel>Done</ng-template>
-    <p>You are now done.</p>
+    <ng-template matStepLabel>Feito</ng-template>
+    <p>Você já pode se cadastar.</p>
     <div>
       <button mat-button color="accent" (click)="enviaCadastro()" type="submit">Cadastrar</button>
         <button mat-button color="warn" (click)="stepper.reset()">Fechar</button>

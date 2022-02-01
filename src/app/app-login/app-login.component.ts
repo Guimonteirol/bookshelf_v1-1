@@ -47,7 +47,8 @@ export class AppLoginComponent {
           error: 'Algo deu errado, confira as informações'
         })
       ).subscribe(()=>{
-        this.rotas.navigate(['/cdd'])
+        this.rotas.navigate(['/usuario'])
+        this.formularioLogin.reset({email:'', senha:''})
       })
   }
 
