@@ -28,3 +28,10 @@
   background-image: url('../../assets/imagens/logoBS1.png');
   background-size: cover;
 }
+
+.loading-spinner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
