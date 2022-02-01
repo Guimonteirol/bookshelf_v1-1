@@ -1,3 +1,4 @@
+import { VestibularComponent } from './vestibular/vestibular.component';
 import { ArtesComponent } from './artes/artes.component';
 import { PsicologiaComponent } from './psicologia/psicologia.component';
 import { DireitoComponent } from './direito/direito.component';
@@ -64,6 +65,9 @@ const routes: Routes = [
   {
     path:'teatro', component: TeatroComponent,
     ...canActivate(enviarSemLogin)
+  },
+  {
+    path:'vestibular', component: VestibularComponent,
   }
 ];
 

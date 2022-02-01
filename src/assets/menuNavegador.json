@@ -14,6 +14,7 @@
   {"linkMenu": "/sugestao", "labelMenu": "Sugestões de Livros", "hab":true},
   {"linkMenu": "/psicologia", "labelMenu": "Livros de Psicologia", "hab":true},
   {"linkMenu": "/artes", "labelMenu": "Livros de Artes", "hab": true},
-  {"linkMenu":"/teatro", "labelMenu":"Livros de Teatro", "hab": true}
+  {"linkMenu":"/teatro", "labelMenu":"Livros de Teatro", "hab": true},
+  {"linkMenu": "/vestibular", "labelMenu":"Livros dos Vestibulares", "hab":true}
 ]
 
