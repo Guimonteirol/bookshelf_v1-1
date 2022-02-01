@@ -1,19 +1,15 @@
 [
-  {"linkMenu": "/cdd", "labelMenu":"Classes Dewey", "hab": true},
-  {"linkMenu": "/feed", "labelMenu":"Feed Notícias", "hab": true},
-  {"linkMenu": "/clube", "labelMenu":"Pagina Usuário", "hab": false},
-  {"linkMenu": "/leitura", "labelMenu":"Clubes de Leitura", "hab": false},
-  {"linkMenu": "/estante", "labelMenu":"Estante Particular", "hab": false},
-  {"linkMenu": "/sagas", "labelMenu":"Sagas da Literatura", "hab": true},
-
-  {"linkMenu": "/biblioteconomia", "labelMenu":"Sobre Biblioteconomia", "hab": true},
-  {"linkMenu": "/tecnologia", "labelMenu": "Livros de Tecnologia", "hab": true},
-
-  {"linkMenu": "/melhores", "labelMenu": "Especiais do Mês","hab": true},
-  {"linkMenu": "/direito", "labelMenu": "Livros de Direito", "hab":true},
-  {"linkMenu": "/sugestao", "labelMenu": "Sugestões de Livros", "hab":true},
-  {"linkMenu": "/psicologia", "labelMenu": "Livros de Psicologia", "hab":true},
-  {"linkMenu": "/artes", "labelMenu": "Livros de Artes", "hab": true},
-  {"linkMenu":"/teatro", "labelMenu":"Livros de Teatro", "hab": true}
+  {"linkMenu": "/cdd", "labelMenu":"Classes Dewey", "hab": true, "btn": "tabela", "user":false },
+  {"linkMenu": "/feed", "labelMenu":"Feed Notícias", "hab": true, "btn": "conteudo", "user":false },
+  {"linkMenu": "/sagas", "labelMenu":"Sagas da Literatura", "hab": true, "btn":"tabela", "user":false },
+  {"linkMenu": "/biblioteconomia", "labelMenu":"Sobre Biblioteconomia", "hab": true, "btn":"tabela", "user":false },
+  {"linkMenu": "/tecnologia", "labelMenu": "Livros de Tecnologia", "hab": true, "btn":"conteudo", "user":false },
+  {"linkMenu": "/melhores", "labelMenu": "Especiais do Mês","hab": true, "btn":"conteudo", "user":false },
+  {"linkMenu": "/direito", "labelMenu": "Livros de Direito", "hab":true, "btn":"tabela", "user":false },
+  {"linkMenu": "/sugestao", "labelMenu": "Sugestões de Livros", "hab":true, "btn":"conteudo", "user":false },
+  {"linkMenu": "/psicologia", "labelMenu": "Livros de Psicologia", "hab":true, "btn":"tabela", "user":false },
+  {"linkMenu": "/artes", "labelMenu": "Livros de Artes", "hab": true, "btn": "tabela", "user":false},
+  {"linkMenu":"/teatro", "labelMenu":"Livros de Teatro", "hab": true, "btn": "tabela", "user":false},
+  {"linkMenu":"/usuario", "labelMenu":"Tela de Usuário", "hab": true, "btn":"conteudo", "user":true }
 ]
 

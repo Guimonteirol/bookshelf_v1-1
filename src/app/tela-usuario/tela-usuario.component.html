@@ -1,0 +1,41 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span><h1>Usuário:</h1></span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="container">
+  <mat-card class="user_left">
+      <span>
+      <h1> Bem-Vindo(a) ao BookShelf</h1>
+      <p>O melhor portal de leitura</p>
+      <mat-selection-list #shoes [multiple]="false">
+        <mat-list-option>
+         Os melhores livros
+        </mat-list-option>
+        <mat-list-option>
+         Os mais comentados
+        </mat-list-option>
+        <mat-list-option>
+         Os Lançamentos
+        </mat-list-option>
+      </mat-selection-list>
+    </span>
+
+  </mat-card>
+  <mat-card>
+    <div class="user_right" >
+      <div *ngIf="user$ | async as user" class="user_right">
+        <div>
+          <p><span>Nome:</span> {{user.displayName}} </p>
+        </div>
+        <div>
+          <p><span>Chave:</span> {{user.uid}} </p>
+        </div>
+        <div>
+          <p><span>E-mail</span> {{user.email}} </p>
+        </div>
+      </div>
+  </div>
+  </mat-card>
+
+</div>
