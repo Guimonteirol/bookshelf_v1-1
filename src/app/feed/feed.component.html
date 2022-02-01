@@ -15,6 +15,7 @@
         </mat-card-content>
         <mat-nav-list>
           <mat-list-item *ngFor="let link of card.link">
+            <mat-divider></mat-divider>
             <a matLine [href]="link.ref">{{ link.texto }}</a>
             <button mat-icon-button>
               <mat-icon>info</mat-icon>
