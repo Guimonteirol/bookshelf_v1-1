@@ -1,6 +1,7 @@
 export interface Sagas {
-    id: number;
     title: string;
+    author:string;
+    img:string;
     article: string;
     lista:[{ livro:string, anodaEdicao:string }];
     cols: number;
