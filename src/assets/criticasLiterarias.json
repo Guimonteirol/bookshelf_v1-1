@@ -1,3 +1,63 @@
-[{
-  "_idCriticaLit":"0","critico":"nome", "titulo":"colocar titulo", "resumo":"resumo da critica"
-}]
+
+  [
+    {
+    "_idCriticaLit":"0",
+    "titulo": "O CAMINHO DA CRÍTICA LITERÁRIA",
+    "critico":"MÁRCIO VASSALLO ",
+    "img": "https://editoras.com/b/wp-content/uploads/2015/07/critica-literaria.jpg",
+    "resumo":"texto extraído do site https://editoras.com/o-caminho-da-critica-literaria/",
+    "link":[
+      {"ref":"https://editoras.com/o-caminho-da-critica-literaria/"}
+    ],
+    "cols": 2,
+    "rows": 3
+  },
+  {
+    "_idCriticaLit":"1",
+    "titulo": "A crítica de Guimarães Rosa",
+    "critico":"Sílvio Holanda",
+    "img": "https://revistacult.uol.com.br/home/wp-content/uploads/2018/01/3_BeneditoNunes_ACriticadeGuimaraesRosa_fotos-Patrick-Pardini.jpg",
+    "resumo":"Os estudos de Benedito Nunes mudaram definitivamente a leitura do maior romancista brasileiro do século 20",
+    "link":[
+      {"ref":"https://revistacult.uol.com.br/home/critica-de-guimaraes-rosa/"}
+    ],
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "_idCriticaLit":"2",
+    "titulo": "Os oito filmes de “Harry Potter”, do pior para o melhor",
+    "critico":"Éder Matheus",
+    "img": "../../assets/imagens/cover3.png",
+    "resumo":"resumo da critica",
+    "link":[
+      {"ref":"https://popeek.com.br/filmes-harry-potter-pior-melhor-critica/"}
+    ],
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "_idCriticaLit":"3",
+    "titulo": "A vida e a obra de Carlos Drummond de Andrade, um dos maiores poetas do Brasil",
+    "critico":"Giuliana Viggiano",
+    "img": "https://s2.glbimg.com/2tvJKhhfrz1ulyQRvbHunQEQojQ=/e.glbimg.com/og/ed/f/original/2019/10/31/carlos.drumond.png",
+    "resumo":"Autor é considerado o principal nome do Modernismo no país: hoje, sua poesia é tema do Enem e de outros vestibulares",
+    "link":[
+      {"ref":"https://revistagalileu.globo.com/Vestibular-e-Enem/noticia/2019/10/vida-e-obra-de-carlos-drummond-de-andrade-um-dos-maiores-poetas-do-brasil.html"}
+    ],
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "_idCriticaLit":"4",
+    "titulo": "O Criticismo de Shakespeare",
+    "critico":"Mário Amora Ramos",
+    "img": "https://www.planocritico.com/wp-content/uploads/2014/02/William_Shakespeare_PLANO-CRITICO-ESPECIAL.jpg",
+    "resumo":"resumo da critica",
+    "link":[
+      {"ref":"https://shakespearebrasileiro.org/especialistas/#:~:text=Em%20seu%20tempo%2C%20Shakespeare%20alcan%C3%A7ou,em%20ambas%2C%20com%C3%A9dia%20e%20trag%C3%A9dia."}
+    ],
+    "cols": 1,
+    "rows": 2
+  }
+]
