@@ -1,34 +1,71 @@
 <div class="grid-container">
   <h1 class="mat-h1" *ngIf="usuario$ | async as usuario">Feed de notícias: {{usuario.displayName}}</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
-    <div *ngIf="cards$ | async as cards; else loading">
-    <mat-grid-tile *ngFor="let card of cards$ | async" [colspan]="card.cols" [rowspan]="card.rows">
-      <mat-card class="dashboard-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>{{card.titulo}}</mat-card-title>
-          <mat-card-subtitle>{{card.subtitulo}}</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image [src]="card.img" [alt]="card.titulo">
-        <mat-card-content class="dashboard-card-content">
-          <div>{{card.conteudo}}</div>
-        </mat-card-content>
-        <mat-nav-list>
-          <mat-list-item *ngFor="let link of card.link">
-            <mat-divider></mat-divider>
-            <a matLine [href]="link.ref">{{ link.texto }}</a>
-            <button mat-icon-button>
-              <mat-icon>info</mat-icon>
-            </button>
-          </mat-list-item>
-        </mat-nav-list>
-      </mat-card>
-    </mat-grid-tile>
+  <div class="search-area">
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Buscar</mat-label>
+        <input matInput #searchInput />
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+    </p>
+    <mat-divider></mat-divider>
+    <div *ngIf="results$ | async as search">
+      <mat-grid-list cols="2" rowHeight="350px">
+        <mat-grid-tile *ngFor="let result of results$ | async" [colspan]="result.cols" [rowspan]="result.rows">
+          <mat-card class="dashboard-card">
+            <mat-card-header>
+              <div mat-card-avatar class="header-image"></div>
+              <mat-card-title>{{result.titulo}}</mat-card-title>
+              <mat-card-subtitle>{{result.subtitulo}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image [src]="result.img" [alt]="result.titulo">
+            <mat-card-content class="dashboard-card-content">
+              <div>{{result.conteudo}}</div>
+            </mat-card-content>
+            <mat-nav-list>
+              <mat-list-item *ngFor="let link of result.link">
+                <mat-divider></mat-divider>
+                <a matLine [href]="link.ref">{{ link.texto }}</a>
+                <button mat-icon-button>
+                  <mat-icon>info</mat-icon>
+                </button>
+              </mat-list-item>
+            </mat-nav-list>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
     </div>
-  </mat-grid-list>
+  </div>
+
+  <mat-grid-list cols="2" rowHeight="350px">
+  <div *ngIf="cards$ | async as cards; else loading">
+  <mat-grid-tile *ngFor="let card of cards$ | async" [colspan]="card.cols" [rowspan]="card.rows">
+    <mat-card class="dashboard-card">
+      <mat-card-header>
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>{{card.titulo}}</mat-card-title>
+        <mat-card-subtitle>{{card.subtitulo}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="card.img" [alt]="card.titulo">
+      <mat-card-content class="dashboard-card-content">
+        <div>{{card.conteudo}}</div>
+      </mat-card-content>
+      <mat-nav-list>
+        <mat-list-item *ngFor="let link of card.link">
+          <mat-divider></mat-divider>
+          <a matLine [href]="link.ref">{{ link.texto }}</a>
+          <button mat-icon-button>
+            <mat-icon>info</mat-icon>
+          </button>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-card>
+  </mat-grid-tile>
+  </div>
   <ng-template #loading>
     <div class="loading-spinner">
       <mat-spinner></mat-spinner>
     </div>
   </ng-template>
+</mat-grid-list>
 </div>
