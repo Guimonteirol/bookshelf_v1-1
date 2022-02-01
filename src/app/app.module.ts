@@ -43,6 +43,8 @@ import { PsicologiaComponent } from './psicologia/psicologia.component';
 import { ArtesComponent } from './artes/artes.component';
 import { TeatroComponent } from './teatro/teatro.component';
 import { TelaUsuarioComponent } from './tela-usuario/tela-usuario.component';
+import { VestibularComponent } from './vestibular/vestibular.component';
+import { VestibularDialogComponent } from './vestibular/vestibular-dialog/vestibular-dialog.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { TelaUsuarioComponent } from './tela-usuario/tela-usuario.component';
     PsicologiaComponent,
     ArtesComponent,
     TeatroComponent,
-    TelaUsuarioComponent
+    TelaUsuarioComponent,
+    VestibularComponent,
+    VestibularDialogComponent
 
   ],
   imports: [

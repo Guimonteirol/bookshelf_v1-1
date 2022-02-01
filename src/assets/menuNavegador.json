@@ -10,6 +10,8 @@
   {"linkMenu": "/psicologia", "labelMenu": "Livros de Psicologia", "hab":true, "btn":"tabela", "user":false },
   {"linkMenu": "/artes", "labelMenu": "Livros de Artes", "hab": true, "btn": "tabela", "user":false},
   {"linkMenu":"/teatro", "labelMenu":"Livros de Teatro", "hab": true, "btn": "tabela", "user":false},
-  {"linkMenu":"/usuario", "labelMenu":"Tela de Usuário", "hab": true, "btn":"conteudo", "user":true }
+  {"linkMenu":"/usuario", "labelMenu":"Tela de Usuário", "hab": true, "btn":"conteudo", "user":true },
+  {"linkMenu": "/vestibular", "labelMenu":"Livros dos Vestibulares", "hab":true, "btn":"tabela", "user":true }
+
 ]
 
