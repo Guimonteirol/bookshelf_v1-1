@@ -1,7 +1,9 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <a href="/app-app-cadastro">
     <img mat-card-image [src]="logoMenu" alt="Imagem do logo no menu">
+    </a>
 
     <button mat-button [matMenuTriggerFor]="menu" >Conteúdos</button>
     <mat-menu #menu="matMenu" >
@@ -28,7 +30,9 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Menu BookShelf Lateral">menu</mat-icon>
       </button>
+      <a href="/app-app-cadastro">
       <img mat-card-sm-image [width]="lIcone" [height]="aIcone" [src]="iconeGeral">
+      </a>
       <ng-container *ngIf="usuario$ | async as usuario; else botaoLogin">
         <button mat-raised-button color="primary" [matMenuTriggerFor]="usuarioMenu">
           <mat-icon class="mat-18">local_library</mat-icon>
