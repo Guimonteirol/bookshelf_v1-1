@@ -1,35 +1,53 @@
+
 .grid-container {
   margin: 20px;
 }
 
 .dashboard-card {
-  text-align: right;
+  text-orientation: initial ;
   position: absolute;
   top: 20px;
   left: 20px;
   right: 20px;
   bottom: 20px;
+  border-radius: 10px ;
+  background-color:lavender;
 }
 
 img{
-  position: left;
    max-width: 400px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
+  margin-left:100px;
 }
 
-
-.more-button {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-}
 
 .dashboard-card-content {
-  text-align: left;
+  text-align: right;
 }
 
-.example-header-image {
+.header-image {
+  display:flex;
+justify-content: space-between;
   background-color: black;
   background-image: url('../../assets/imagens/logoBS1.png');
   background-size: cover;
+}
+
+h1 {
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+
+mat-card-header{
+  display:flex;
+  text-align: left;
+}
+
+button
+{
+  background-color:lightgray;
+  border-radius: 30px;
+  color: purple;
 }

@@ -1,26 +1,25 @@
 <div class="grid-container">
   <h1>As 10 principais Sagas da Literatura </h1>
-
-  <mat-grid-list cols="2" rowHeight="175px">
+<mat-divider></mat-divider>
+  <mat-grid-list cols="2" rowHeight="350px">
     <mat-grid-tile *ngFor="let card of sagasCards$ | async" [colspan]="card.cols" [rowspan]="card.rows">
       <mat-card class="dashboard-card">
         <mat-card-header>
-
-          <mat-card-title>
-            {{card.title}}
-            <!--botão para mostrar as listas de livro da saga-->
-                <button mat-button class="more-button" (click)="openDialog(card.title)">
-                  Confira <a routerLink="#">aqui</a> a coleção desta Saga!
-              </button>
-
-              <!--resumo-->
-          </mat-card-title>
+          <div mat-card-avatar class="header-image"></div>
+          <mat-card-title class="mat-card-title">{{card.title}}</mat-card-title>
+          <mat-card-subtitle>{{card.author}}</mat-card-subtitle>
         </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
-          <div>{{ card.article }}</div>
-        </mat-card-content>
+
+          <img mat-card-sm-image src="{{ card.img }}" />
+
+          <mat-card-content class="dashboard-card-content" class="card_article">{{ card.article }}
+          </mat-card-content>
+
+            <button mat-button class="more-button" (click)="openDialog(card.title)">
+              Confira aqui a coleção desta Saga!
+            </button>
+
       </mat-card>
     </mat-grid-tile>
-
   </mat-grid-list>
 </div>
