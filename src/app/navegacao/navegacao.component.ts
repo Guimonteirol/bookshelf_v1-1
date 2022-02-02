@@ -10,6 +10,7 @@ import { AppLoginComponent } from './../app-login/app-login.component';
 import { MenuNavegador } from './../modelosInterface/menuNavegador';
 import { AutenticacaoFirebaseService } from './../servicosInterface/autenticacao-firebase.service';
 import { NavegacaoService } from './../servicosInterface/navegacao.service';
+import { Usuario } from '../modelosInterface/usuario';
 
 @Component({
   selector: 'app-navegacao',
@@ -27,6 +28,7 @@ export class NavegacaoComponent {
   //Controle das rotas do menu.
   itensMenu$: Observable<MenuNavegador[]>
   itensMenutop10$: Observable<Menutop10[]>
+  itensUsuario$: Observable<Usuario[]>
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
@@ -47,6 +49,13 @@ export class NavegacaoComponent {
       )
 
       this.itensMenutop10$ = navegadorService.listagemMenutop10()
+      .pipe(
+        catchError(error =>{
+          return of([])
+        })
+      )
+
+      this.itensUsuario$ = navegadorService.listagemUser()
       .pipe(
         catchError(error =>{
           return of([])

@@ -46,6 +46,7 @@ import { TelaUsuarioComponent } from './tela-usuario/tela-usuario.component';
 import { VestibularComponent } from './vestibular/vestibular.component';
 import { VestibularDialogComponent } from './vestibular/vestibular-dialog/vestibular-dialog.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,7 +65,7 @@ import { VestibularDialogComponent } from './vestibular/vestibular-dialog/vestib
     TeatroComponent,
     TelaUsuarioComponent,
     VestibularComponent,
-    VestibularDialogComponent
+    VestibularDialogComponent,
 
   ],
   imports: [

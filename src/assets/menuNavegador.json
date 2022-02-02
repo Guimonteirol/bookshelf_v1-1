@@ -1,10 +1,9 @@
 [
-  {"linkMenu": "/cdd", "labelMenu":"Classes Dewey", "hab": true, "btn": "/", "user":false },
-  {"linkMenu": "/feed", "labelMenu":"Feed Notícias", "hab": true, "btn": "/", "user":false },
-  {"linkMenu": "/melhores", "labelMenu": "Especiais do Mês","hab": true, "btn":"conteudo", "user":false },
-  {"linkMenu": "/sugestao", "labelMenu": "Sugestões de Livros", "hab":true, "btn":"conteudo", "user":false },
-  {"linkMenu": "/biblioteconomia", "labelMenu":"Sobre Biblioteconomia", "hab": true, "btn":"conteudo", "user":false },
-  {"linkMenu":"/vestibular", "labelMenu":"Livros dos vestibulares", "hab": true, "btn":"conteudo", "user":true },
-  {"linkMenu":"/usuario", "labelMenu":"Tela de Usuário", "hab": true, "btn":"conteudo", "user":true }
+  {"linkMenu": "/cdd", "labelMenu":"Classes Dewey", "hab": true, "btn": "conteudo"},
+  {"linkMenu": "/feed", "labelMenu":"Feed Notícias", "hab": true, "btn": "conteudo"},
+  {"linkMenu": "/melhores", "labelMenu": "Especiais do Mês","hab": true, "btn":"conteudo"},
+  {"linkMenu": "/sugestao", "labelMenu": "Sugestões de Livros", "hab":true, "btn":"conteudo"},
+  {"linkMenu": "/biblioteconomia", "labelMenu":"Sobre Biblioteconomia", "hab": true, "btn":"conteudo"},
+  {"linkMenu":"/vestibular", "labelMenu":"Livros dos vestibulares", "hab": true, "btn":"conteudo"}
 ]
 

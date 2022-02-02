@@ -79,10 +79,9 @@
     </mat-toolbar>
     <mat-menu #usuarioMenu="matMenu">
       <button mat-menu-item (click)="sairUsuario()">LOGOUT</button>
-      <mat-nav-list *ngFor="let itemMenu of itensMenu$ | async; index as i">
+      <mat-nav-list *ngFor="let itemMenu of itensUsuario$ | async; index as i">
         <a
           mat-list-item
-          *ngIf="itemMenu.user === true"
           [href]="itemMenu.linkMenu"
         >
           <p>{{ itemMenu.labelMenu }}</p>
