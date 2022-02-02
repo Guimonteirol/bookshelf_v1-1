@@ -12,6 +12,8 @@ import { TecnologiaComponent } from './tecnologia/tecnologia.component';
 import { SagasComponent } from './sagas/sagas.component';
 import { MelhoresdomesComponent } from './melhoresdomes/melhoresdomes.component';
 import { TeatroComponent } from './teatro/teatro.component';
+import { VestibularComponent } from './vestibular/vestibular.component';
+
 
 const enviarSemLogin = () => redirectUnauthorizedTo(['/app-app-cadastro']);
 
@@ -69,6 +71,11 @@ const routes: Routes = [
   {
     path:'teatro', component: TeatroComponent,
     ...canActivate(enviarSemLogin)
+  },
+  {
+    path:'vestibular', component: VestibularComponent,
+    ...canActivate(enviarSemLogin)
+
   }
 ];
 
