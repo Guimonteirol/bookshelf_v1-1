@@ -1,5 +1,8 @@
 <div *ngFor="let list of sagasLista$ | async">
   <div *ngIf="list.title === title">
+    <mat-divider></mat-divider>
+    <h1>{{list.title}}</h1>
+    <mat-divider></mat-divider>
     <div mat-dialog-content *ngFor="let livros of list.lista">
       <ul>
         <li *ngIf="list.title">
@@ -9,3 +12,5 @@
     </div>
   </div>
 </div>
+
+

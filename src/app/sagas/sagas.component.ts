@@ -37,6 +37,7 @@ export class SagasComponent {
     public dialog: MatDialog,
     private breakpointObserver: BreakpointObserver,
     private sagasInfo: SagasService,
+
     ) {
       this.sagasCards$= sagasInfo.listagemSagas()
       .pipe(
