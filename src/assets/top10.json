@@ -1,0 +1,8 @@
+[
+  {"linkMenu": "/sagas", "labelMenu":"Sagas da Literatura", "hab": true, "btn":"tabela", "user":false },
+  {"linkMenu": "/tecnologia", "labelMenu": "Livros de Tecnologia", "hab": true, "btn":"tabela", "user":false },
+  {"linkMenu": "/direito", "labelMenu": "Livros de Direito", "hab":true, "btn":"tabela", "user":false },
+  {"linkMenu": "/artes", "labelMenu": "Livros de Artes", "hab": true, "btn": "tabela", "user":false},
+  {"linkMenu":"/teatro", "labelMenu":"Livros de Teatro", "hab": true, "btn": "tabela", "user":false},
+  {"linkMenu": "/psicologia", "labelMenu": "Livros de Psicologia", "hab":true, "btn":"tabela", "user":false }
+]

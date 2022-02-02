@@ -34,19 +34,18 @@ export class AutenticacaoFirebaseService {
     }
 
     menssagensDeErro(error: string){
-      switch(error){
-        case 'auth/email-alredy-in-use':
+      if(error === "auth/email-alredy-in-use" ){
           return 'Email já está cadastrado'
-          break;
-        case 'auth/weak-password':
+      }
+      else if(error === "auth/weak-password" ){
          return 'A senha deve conter no mínimo 6 caracteres';
-         break;
-         case 'auth/invalid-email':
+      }
+      else if(error === "auth/invalid-email" ){
           return 'Email inválido'
-         break;
-        default:
+      }
+      else
           return 'Ocorreu um erro';
       }
     }
 
-}
+

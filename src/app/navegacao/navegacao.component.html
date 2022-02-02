@@ -1,43 +1,84 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
-    <img mat-card-image [src]="logoMenu" alt="Imagem do logo no menu">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <img mat-card-image [src]="logoMenu" alt="Imagem do logo no menu" />
 
-    <button mat-button [matMenuTriggerFor]="menu" >Conteúdos</button>
-    <mat-menu #menu="matMenu" >
-    <mat-nav-list *ngFor="let itemMenu of itensMenu$ | async; index as i">
-      <div *ngIf="itemMenu.btn == 'conteudo'">
-     <a mat-list-item *ngIf="itemMenu.hab === true" [href]="itemMenu.linkMenu">{{itemMenu.labelMenu}}</a>
-    </div>
-    </mat-nav-list>
-    </mat-menu>
+    <mat-chip-list class="mat-chip-list-stacked" aria-label="Color selection">
+      <mat-chip selected [color]="'accent'">
+        <button mat-button [matMenuTriggerFor]="menu2">Top 10</button>
+      </mat-chip>
+    </mat-chip-list>
+        <mat-menu #menu2="matMenu">
+          <mat-nav-list *ngFor="let itemMenu of itensMenutop10$ | async; index as i">
+            <div *ngIf="itemMenu.btn == 'tabela'">
+              <a
+                mat-list-item
+                *ngIf="itemMenu.hab === true"
+                [href]="itemMenu.linkMenu"
+                >{{ itemMenu.labelMenu }}</a
+              >
+            </div>
+          </mat-nav-list>
+        </mat-menu>
 
-    <button mat-button [matMenuTriggerFor]="menu2" >Tabelas</button>
-    <mat-menu #menu2="matMenu" >
-    <mat-nav-list *ngFor="let itemMenu of itensMenu$ | async; index as i">
-      <div *ngIf="itemMenu.btn == 'tabela'">
-     <a mat-list-item *ngIf="itemMenu.hab === true" [href]="itemMenu.linkMenu">{{itemMenu.labelMenu}}</a>
-    </div>
-    </mat-nav-list>
-    </mat-menu>
+    <ng-container *ngFor="let itemMenu of itensMenu$ | async; index as i">
+      <mat-nav-list>
+        <div *ngIf="itemMenu.btn != 'tabela'">
+          <mat-chip-list class="mat-chip-list-stacked" aria-label="Color selection">
+            <mat-chip selected [color]="'accent'">
+          <a class="espaco"
+            mat-list-item
+            *ngIf="itemMenu.hab === true"
+            [href]="itemMenu.linkMenu"
+            >{{ itemMenu.labelMenu }}</a
+          >
+        </mat-chip>
+      </mat-chip-list>
+        </div>
+      </mat-nav-list>
+  </ng-container>
   </mat-sidenav>
 
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async"
+      >
         <mat-icon aria-label="Menu BookShelf Lateral">menu</mat-icon>
       </button>
-      <img mat-card-sm-image [width]="lIcone" [height]="aIcone" [src]="iconeGeral">
+      <img
+        mat-card-sm-image
+        [width]="lIcone"
+        [height]="aIcone"
+        [src]="iconeGeral"
+      />
       <ng-container *ngIf="usuario$ | async as usuario; else botaoLogin">
-        <button mat-raised-button color="primary" [matMenuTriggerFor]="usuarioMenu">
+        <button
+          mat-raised-button
+          color="primary"
+          [matMenuTriggerFor]="usuarioMenu"
+        >
           <mat-icon class="mat-18">local_library</mat-icon>
-          {{usuario.displayName}}
+          {{ usuario.displayName }}
           <mat-icon>expand_more</mat-icon>
         </button>
       </ng-container>
       <ng-template #botaoLogin>
-        <button mat-raised-button color="primary" (click)="abrirLogin('Tela de Login')">
+        <button
+          mat-raised-button
+          color="primary"
+          (click)="abrirLogin('Tela de Login')"
+        >
           <mat-icon class="mat-18">login</mat-icon>
           LOGIN
         </button>
@@ -45,11 +86,15 @@
     </mat-toolbar>
     <mat-menu #usuarioMenu="matMenu">
       <button mat-menu-item (click)="sairUsuario()">LOGOUT</button>
-        <mat-nav-list *ngFor="let itemMenu of itensMenu$ | async; index as i">
-          <a mat-list-item *ngIf="itemMenu.user === true" [href]="itemMenu.linkMenu">
-            <p>{{itemMenu.labelMenu}}</p>
-          </a>
-        </mat-nav-list>
+      <mat-nav-list *ngFor="let itemMenu of itensMenu$ | async; index as i">
+        <a
+          mat-list-item
+          *ngIf="itemMenu.user === true"
+          [href]="itemMenu.linkMenu"
+        >
+          <p>{{ itemMenu.labelMenu }}</p>
+        </a>
+      </mat-nav-list>
     </mat-menu>
     <router-outlet></router-outlet>
   </mat-sidenav-content>

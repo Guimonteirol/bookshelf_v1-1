@@ -11,7 +11,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatStepperModule} from '@angular/material/stepper';
-
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   exports:[
@@ -26,7 +26,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     MatGridListModule,
     MatMenuModule,
     MatTreeModule,
-    MatStepperModule
+    MatStepperModule,
+    MatChipsModule
   ]
 })
 export class AppMaterialModule { }

@@ -1,3 +1,4 @@
+import { Menutop10 } from './../modelosInterface/menutop10';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
@@ -25,6 +26,7 @@ export class NavegacaoComponent {
   aIcone=80;
   //Controle das rotas do menu.
   itensMenu$: Observable<MenuNavegador[]>
+  itensMenutop10$: Observable<Menutop10[]>
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
@@ -38,6 +40,13 @@ export class NavegacaoComponent {
     private navegadorService: NavegacaoService
     ) {
       this.itensMenu$ = navegadorService.listagemMenu()
+      .pipe(
+        catchError(error =>{
+          return of([])
+        })
+      )
+
+      this.itensMenutop10$ = navegadorService.listagemMenutop10()
       .pipe(
         catchError(error =>{
           return of([])

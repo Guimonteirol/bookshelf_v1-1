@@ -55,7 +55,7 @@ export class AppLoginComponent {
   loginWithGoogle() {
     this.autenticacaoFirebaseService
       .loginWithGoogle()
-      .then(() => this.rotas.navigate(['/cdd']))
+      .then(() => this.rotas.navigate(['/usuario']))
       .catch((e) => console.log(e.message));
   }
 }

@@ -1,41 +1,30 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span><h1>Usuário:</h1></span>
-  </mat-toolbar-row>
-</mat-toolbar>
+
+    <span><h1>Bem-Vindo(a) ao Bookshelf</h1></span>
+
 <div class="container">
   <mat-card class="user_left">
-      <span>
-      <h1> Bem-Vindo(a) ao BookShelf</h1>
-      <p>O melhor portal de leitura</p>
-      <mat-selection-list #shoes [multiple]="false">
-        <mat-list-option>
-         Os melhores livros
-        </mat-list-option>
-        <mat-list-option>
-         Os mais comentados
-        </mat-list-option>
-        <mat-list-option>
-         Os Lançamentos
-        </mat-list-option>
-      </mat-selection-list>
-    </span>
+        <div *ngIf="user$ | async as user" class="user_right">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image">
+              </div>
+              <mat-card-title> {{user.displayName}}</mat-card-title>
+              <mat-card-subtitle>User</mat-card-subtitle>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <div class="textcentro">
+             <span><mat-icon> vpn_key</mat-icon></span> <p>{{user.uid}} </p>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="textcentro">
+              <span><mat-icon>alternate_email</mat-icon></span> <p> {{user.email}} </p>
+            </div>
+            <mat-card-content>
 
-  </mat-card>
-  <mat-card>
-    <div class="user_right" >
-      <div *ngIf="user$ | async as user" class="user_right">
-        <div>
-          <p><span>Nome:</span> {{user.displayName}} </p>
-        </div>
-        <div>
-          <p><span>Chave:</span> {{user.uid}} </p>
-        </div>
-        <div>
-          <p><span>E-mail</span> {{user.email}} </p>
-        </div>
-      </div>
-  </div>
+            </mat-card-content>
+          </mat-card>
+    </div>
+
   </mat-card>
 
 </div>

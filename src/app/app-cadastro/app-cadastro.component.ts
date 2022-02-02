@@ -77,10 +77,6 @@ export class AppCadastroComponent implements OnInit {
           error: ({ message }) => this.autenticacaoFirebaseService.menssagensDeErro(message),
         })
       ).subscribe(() => {
-        this.nomeuser = '';
-        this.emailuser = '';
-        this.senhauser = '';
-        this.confirmarSenhauser = '';
        this.rotas.navigate(['/usuario'])
       });
   }
